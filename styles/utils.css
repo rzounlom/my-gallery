@@ -1,0 +1,37 @@
+/*** Flexbox Utils ***/
+
+/* Display flex row */
+
+.d-flex-row-fs-fs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.d-flex-row-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex-row-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Display flex column */
+
+.d-flex-col-fs-fs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.d-flex-col-c-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
