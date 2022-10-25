@@ -13,7 +13,7 @@
   font-family: sans-serif;
   font-weight: 600;
   font-size: 14px;
-  padding: 12px;
+  padding: 50px 12px 12px 12px;
 }
 
 /* 
@@ -61,20 +61,55 @@ header {
 /* Stats */
 
 .stats {
-  border: 1px solid lightgrey;
   height: 30%;
   width: 100%;
+  padding: 0 10%;
 }
+
+.stats > .stat {
+  height: 52px;
+  width: 78px;
+  background-color: #e5e5e5;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.stats > .stat > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+
+.stats > .stat > p.number {
+  color: #4e5150;
+}
+
+.stats > .stat > p.description {
+  color: #bdbdbd;
+}
+
+/* 
+----
+Main
+----
+ */
 
 main {
   border: 1px solid lightgrey;
-  height: 50%;
+  height: 55%;
   width: 100%;
 }
 
+/* 
+------
+Footer
+------
+ */
+
 footer {
   border: 1px solid lightgrey;
-  height: 10%;
+  height: 5%;
   width: 100%;
 }
 
@@ -84,8 +119,116 @@ Media queries
 -------------
  */
 
+/* Lage mobile */
+@media (min-width: 540px) {
+  /* Stats */
+  .stats {
+    max-width: 500px;
+  }
+
+  .stats > .stat {
+    width: 105px;
+  }
+}
+
+/* Tablet */
 @media (min-width: 768px) {
+  /* Header */
+  header {
+    height: 30%;
+  }
+
+  /* Profile */
+  .profile > .profile-name {
+    margin-top: 7px;
+    height: 10%;
+    font-size: 16px;
+  }
+
+  .profile > .profile-location {
+    height: 10%;
+    font-size: 12px;
+  }
+
   .profile > .profile-img {
-    width: 200px;
+    width: 175px;
+  }
+
+  /* Stats */
+  .stats {
+    max-width: 500px;
+    padding: 0 5%;
+  }
+
+  .stats > .stat {
+    height: 60px;
+    width: 115px;
+    font-size: 14px;
+  }
+
+  /* Main */
+  main {
+    height: 70%;
+  }
+}
+
+/* Medium desktop */
+@media (min-width: 1280px) {
+  /* Header */
+  header {
+    height: 30%;
+  }
+
+  /* Profile */
+  .profile > .profile-img {
+    height: 70%;
+    width: 170px;
+  }
+
+  /* Stats */
+  .stats {
+    max-width: 600px;
+    padding: 0 5%;
+  }
+
+  .stats > .stat {
+    height: 67px;
+    width: 130px;
+    font-size: 16px;
+  }
+
+  .stats > .stat > p {
+    height: 35%;
+  }
+
+  /* Main */
+  main {
+    height: 65%;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  /* Header */
+  header {
+    height: 25%;
+  }
+
+  /* Main */
+  main {
+    height: 70%;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  /* Header */
+  header {
+    height: 20%;
+  }
+
+  /* Main */
+  main {
+    height: 75%;
   }
 }

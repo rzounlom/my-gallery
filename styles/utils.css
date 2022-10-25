@@ -14,6 +14,12 @@
   align-items: center;
 }
 
+.d-flex-row-sa-c {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .d-flex-row-c-c {
   display: flex;
   justify-content: center;
