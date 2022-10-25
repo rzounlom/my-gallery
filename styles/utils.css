@@ -36,6 +36,13 @@
   align-items: center;
 }
 
+.d-flex-col-sa-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .d-flex-col-c-c {
   display: flex;
   flex-direction: column;
